@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+	   <script>
+	   			function bubble(arr){
+        		for(var i=0;i<arr.length-1;i++){
+            			var bool = true;
+            			for(var j =0;j<arr.length-1-i;j++){
+                			if(arr[j] > arr[j+1]){
+                    				var temp = arr[j];
+                    				arr[j] = arr[j+1];
+                    				arr[j+1] = temp;
+                    				bool = false;
+                			}
+            			}
+            			if(bool){
+                			break;
+            			}
+        		}
+        		return arr;}
+	   </script>
+    </head>
+    <body>
+    <div class="father">
+    	<div class="son"></div>
+    </div>
+    </body>
+</html>
